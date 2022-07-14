@@ -337,7 +337,7 @@ function App() {
                 <div className="textwynagrodzenia"> {Math.round(earned * 4.77)} zł + {Math.round(bonus * 4.77)} zł</div> <div className="bonusjednorazowy">bonusu jednorazowego</div>
               </div>
             </div>
-            <div className="restart" onClick={() => restartKalkulatora()}>Restart</div>
+            <div className="restart" onClick={() => restartKalkulatora()}>Powrót</div>
             <h2>   </h2>
             <h1> Podsumowanie:  </h1>
             <div className="questions-full1">
