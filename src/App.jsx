@@ -227,6 +227,7 @@ function App() {
     setZapamietane6("")
     setZapamietane7("")
     setZapamietane8("")
+    setBonus(0)
   };
 
   const questions = [
@@ -272,16 +273,17 @@ function App() {
     {
       text: "6. Czy możesz pomóc osobie zależnej wstać/usiąść?",
       options: [
-        { id: 0, text: "Tak - mogę pomóc osobie zależnej wstać/usiąść", wartosc: 100 },
-        { id: 1, text: "Nie", wartosc: 0 },
+        { id: 0, text: "Tak - mogę pomóc osobie zależnej wstać/usiąść przy dużej pomocy tej osoby", wartosc: 20 },
+        { id: 1, text: "Tak - mogę pomóc osobie zależnej wstać/usiąść przy małej pomocy tej osoby", wartosc: 100 },
+        { id: 2, text: "Nie", wartosc: 0 },
 
       ],
     },
     {
-      text: "7. Czy pomożesz osobie zależnej przy toalecie nocnej?",
+      text: "7. Czy pomożesz osobie zależnej przy toalecie w nocy?",
       options: [
         { id: 0, text: "Tak - sporadycznie raz w nocy", wartosc: 20 },
-        { id: 1, text: "Tak - częściej niż raz w nocy", wartosc: 50 },
+        { id: 1, text: "Tak - częściej niż raz w nocy", wartosc: 80 },
         { id: 2, text: "Nie pomagam w nocy ", wartosc: 0 },
       ],
     },
